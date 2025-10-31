@@ -102,10 +102,6 @@ Deliverables:
 ---
 
 
-### Prerequisites
-- Python 3.10+
-- Node.js optional (not required for these minimal apps)
-- MySQL for Module 2 (not required for the SQLite demo app)
 
 
 ## Deployment (Generic Cloud Provider)
