@@ -101,47 +101,12 @@ Deliverables:
 
 ---
 
-## Hands-on Labs: Running the Minimal Full-Stack App
-Example app paths:
-- `3_intro_to_web_development/full_stack_minimal_app/`
-- `3_intro_to_web_development/full_stack_minimal_app_1/`
 
 ### Prerequisites
 - Python 3.10+
 - Node.js optional (not required for these minimal apps)
 - MySQL for Module 2 (not required for the SQLite demo app)
 
-### Setup and Run (Windows PowerShell)
-From the app directory (e.g., `3_intro_to_web_development/full_stack_minimal_app/`):
-
-```bash
-# 1) Create & activate a virtual environment
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-
-# 2) Install dependencies
-pip install -r requirements.txt
-
-# 3) Initialize the local SQLite database
-python setup_db.py
-
-# 4) Run the FastAPI backend (Uvicorn)
-uvicorn main:app --reload --host 127.0.0.1 --port 8000
-```
-
-Open the frontend at `index.html` in your browser. The `script.js` will call the backend at `http://127.0.0.1:8000` (update if you change host/port).
-
-Troubleshooting tips:
-- If `guestbook.db` exists and you want a fresh start, delete it and rerun `setup_db.py`.
-- If ports are busy, change `--port 8001` and update any hardcoded frontend endpoints.
-
----
-
-## Database Notes
-- Module 2 uses MySQL conceptually and practically. However, the minimal apps use SQLite for simplicity. This keeps local setup light while reinforcing SQL skills.
-- You can adapt the apps to MySQL by swapping the SQLite driver and connection logic in `main.py` and `setup_db.py`.
-
----
 
 ## Deployment (Generic Cloud Provider)
 When you are ready to deploy, target a generic cloud provider.
@@ -159,13 +124,7 @@ Deployment deliverables:
 
 ---
 
-## Assessment and Grading
-- **Quizzes**: Git basics, SQL fundamentals, HTTP/REST.
-- **Labs**: Full-stack minimal app; frontend fetch; backend API endpoints.
-- **Project**: A CRUD full-stack app with authentication and deployment to a generic cloud provider.
-- **Code Quality**: Readability, structure, and adherence to best practices.
 
----
 
 ## Repository Map
 Quick reference to key paths:
@@ -177,20 +136,5 @@ Quick reference to key paths:
 
 ---
 
-## Suggested Timeline (Flexible)
-- Week 1: Git/GitHub, tooling setup.
-- Weeks 2–3: Databases and SQL.
-- Week 4: Web fundamentals + minimal full-stack app lab.
-- Weeks 5–6: Frontend foundations (HTML/CSS/JS).
-- Weeks 7–8: Backend with FastAPI and E2E integration.
-- Week 9: Deployment to a generic cloud provider, polish, and presentations.
 
----
 
-## Contributing
-- Use feature branches and pull requests.
-- Keep commit messages concise and descriptive.
-- Add or update module notes as you learn.
-
-## License
-For educational use. Update if you plan to distribute.
